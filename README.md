@@ -1,35 +1,56 @@
-# Nebula
+# ProjectNebula
+# Cloud-Based Application Using AWS Lambda, API Gateway, DynamoDB, ECS & ECR
 
-These instructions will help students to clone and host the React app on their GitHub Pages.
+## Project Overview
+This project demonstrates a cloud-based architecture using AWS services to handle backend logic, API management, serverless computing, and secure data storage. The system is designed to handle user interactions, API requests, server-side processing, and cloud monitoring, ensuring scalability, security, and efficient deployment.
 
-### Prerequisites
+## Architecture
+The architecture of this application integrates multiple AWS services:
 
-- GitHub account
+- **AWS Lambda** : Handles the server-side processing and logic in a serverless environment.
+- **Amazon API Gateway**: Facilitates communication between the client and the Lambda functions through HTTP requests.
+- **Amazon DynamoDB**: Provides fast and flexible NoSQL database services, used for storing user data.
+- **Amazon ECS (Elastic Container Service)**: Manages Docker containers for scalable, distributed applications.
+- **Amazon ECR (Elastic Container Registry)**: Stores Docker container images for deployment in ECS.
+- **AWS IAM (Identity and Access Management)**: Ensures only authorized users can invoke APIs and access resources.
+- **Amazon CloudWatch**: Monitors the application and logs, providing insights for system performance.
 
-### Installation
+## Features
+- **Serverless architecture**: Using AWS Lambda for scalable, efficient computing without managing servers.
+- **API Management**: API Gateway integrates the frontend with backend Lambda functions.
+- **Data Management**: DynamoDB provides low-latency, highly scalable data storage.
+- **Dockerized Deployment**: ECS and ECR are used to handle containerized applications, ensuring scalable deployment.
 
-1. **Clone the Repository:**
+## Technologies Used
+- AWS Lambda
+- Amazon API Gateway
+- Amazon DynamoDB
+- Amazon ECS and ECR
+- AWS IAM and CloudWatch
+- Docker
 
-   ```bash
-   git clone https://github.com/lawrencemuema/Nebula.git
-   cd Nebula
+## FrontEnd and BackEnd
+- Frontend: HTML, CSS for the user interface and presentation layer.
+- Backend: PHP is used for handling dynamic content rendering, form submissions, session management, and database interactions.
 
-   git checkout -b gh-pages
+# Getting Started
+## 1. Clone the Repository
+```sh
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+```
 
-   git add .
-   git commit -m "Add build files for GitHub Pages"
-   git push origin gh-pages
-   ```
+## 2. Prerequisites
+- AWS Account
+- Docker installed on your local machine
+- AWS CLI configured
 
-2. **Using Github webpage:**
+## 3. Deploying the app
+- Step 1: Push the container to ECR.
+- Step 2: Deploy the application using ECS.
+- Step 3: Set up API Gateway to connect the frontend with backend Lambda functions.
 
-   ```bash
-   Go to your GitHub repository.
-   Navigate to "Settings" > "Pages" in the sidebar.
-   Select the "gh-pages" branch and the "root" directory.
-   ```
-
-
-After a few minutes, your React app will be available at https://your-username.github.io/your-repo/.
-
-*If you face any redirection issues please reload the homepage: [yourgh-pages/Nebula](https://your-username.github.io/your-repo/.)https://your-username.github.io/your-repo/.
+## 4. Monitoring and Logging
+Use AWS CloudWatch to monitor the performance of your Lambda functions, ECS containers, and overall system health.
+## Contributing
+Feel free to submit a pull request or open an issue if you have any suggestions for improving the project.
