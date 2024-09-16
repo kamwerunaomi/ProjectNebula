@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Interface</title>
+</head>
+<body>
+    <h1>App Dashboard</h1>
+    <form method="POST" action="process.php">
+        <input type="text" name="new_record" placeholder="Enter new record">
+        <button type="submit">Add Record</button>
+    </form>
+
+    <button onclick="sendNotification()">Send Notification</button>
+
+    <div id="dynamoData">
+        </div>
+
+    <script>
+        function sendNotification() {
+            // Placeholder for JavaScript logic to send notification
+            alert("Notification sent!"); // Replace with actual notification logic
+        }
+    </script>
+</body>
+</html>
